@@ -48,4 +48,8 @@ export class Rada {
         fractionObj.showBiggestBribeTaker();
     }
 
+    ShowAllFractionDeputies(fractionObj: Fraction) {
+        fractionObj.deleteAllDeputies()
+    }
+
 }

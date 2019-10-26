@@ -35,10 +35,10 @@ const FirstITParty = new Fraction('FirstITFraction', [Oksana, Henadiy, Maria]);
 
 //RADA
 
-const Rada1 = new Rada([]);
-
-Rada1.addFraction(FirstITParty); // Add Fraction
-Rada1.addDeputyToFraction(FirstITParty, Vasyl); //AddDeputy to fraction
-Rada1.showAllFraction();
+// const Rada1 = new Rada([]);
+//
+// Rada1.addFraction(FirstITParty); // Add Fraction
+// Rada1.addDeputyToFraction(FirstITParty, Vasyl); //AddDeputy to fraction
+// Rada1.showAllFraction(); // ShowAllFraction
 
 
