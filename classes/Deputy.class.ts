@@ -6,18 +6,25 @@ export class Deputy extends Human {
     age: number;
     bribeTaker: boolean;
     bribeSum: number;
+    takenBribe: number;
 
     constructor(weight: number, height: number, surname: string, name: string, age: number, bribeTaker: boolean,
-                bribeSum: number) {
+                bribeSum: number, takenBribe: number = 0 ) {
         super(weight, height);
         this.surname = surname;
         this.name = name;
         this.age = age;
         this.bribeTaker = bribeTaker;
         this.bribeSum = bribeSum;
+        this.takenBribe = takenBribe
     }
 
     getBribe(sum: number): void {
-        (sum <= this.bribeSum) ? console.log('bribe has been taken') : console.log('bribe is very big');
+        if(!this.bribeTaker){
+            console.log(`NO I'M HONEST DEPUTY`);
+            return
+        }
+
+        (sum <= this.bribeSum) ? (this.takenBribe += sum) : console.log('bribe is very big');
     }
 }
