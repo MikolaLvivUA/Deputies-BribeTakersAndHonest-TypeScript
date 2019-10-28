@@ -1,6 +1,4 @@
-import {Deputy} from "./classes/Deputy.class";
-import {Fraction} from "./classes/Fraction.class";
-import {Rada} from "./classes";
+import {Deputy, Fraction, Rada} from "./classes";
 //Create ne Deputies
 const Vasyl = new Deputy(90,170,'Gnidenko', 'Vasyl', 42, true, 1000);
 
@@ -35,7 +33,7 @@ const FirstITParty = new Fraction('FirstITFraction', [Oksana, Henadiy, Maria]);
 
 //RADA
 
-// const Rada1 = new Rada([]);
+const Rada1 = new Rada([]);
 //
 // Rada1.addFraction(FirstITParty); // Add Fraction
 // Rada1.addDeputyToFraction(FirstITParty, Vasyl); //AddDeputy to fraction
